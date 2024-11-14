@@ -31,7 +31,7 @@ const NewUser = () => {
       <div className="form-container">
         <form onSubmit={handleSubmit}>
           <div className="form-group">
-            <label htmlFor="username">USER NAME</label>
+            <label htmlFor="username">user name</label>
             <input
               id="username"
               type="text"
@@ -39,6 +39,18 @@ const NewUser = () => {
               placeholder="username"
               onChange={(event) => {
                 setUserName(event.target.value);
+              }}
+            />
+          </div>
+          <div className="form-group">
+            <label htmlFor="password">password</label>
+            <input
+              id="password"
+              type="text"
+              value={password}
+              placeholder="password"
+              onChange={(event) => {
+                setpassword(event.target.value);
               }}
             />
           </div>
@@ -68,8 +80,8 @@ const NewUser = () => {
           </div>
          
         </form>
-        <Link to={"/users"}>
-          <button type="submit">Add a new user</button>
+        <Link to={"/login/missiles"}>
+          <button type="submit">go to shop</button>
         </Link>
       </div>
     </>

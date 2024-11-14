@@ -14,9 +14,9 @@ const DisplayUsers = () => {
             <h3>Name: {user.username}</h3>
             <p>ORGANIZATION: {user.organization}</p>
             <p>ZONE: {user.zone}</p>
-            <button>
-              <NavLink to={`/users/edit/${user._id}`}>Buy</NavLink>
-            </button>
+            
+              {/* <NavLink to={"/missiles/"}><button>buy</button></NavLink> */}
+            
 
             {/* <button
               onClick={() =>
@@ -33,9 +33,9 @@ const DisplayUsers = () => {
       </div>
       {/* <Link to={"/users/add"}>
         <button>ADD USER</button>
-      </Link>
+      </Link> */}
 
-      <Link to={"/users/login"}>
+      {/* <Link to={"/users/login"}>
         <button>Login</button>
       </Link> */}
     </>
