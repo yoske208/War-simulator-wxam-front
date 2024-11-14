@@ -1,6 +1,6 @@
 import React, { useContext, useState } from "react";
 import { Link } from "react-router-dom";
-import {UsersContext} from "../Provider/UserProvider";
+import { UsersContext } from "../Provider/UserProvider";
 
 interface User {
   _id?: string;
@@ -9,7 +9,6 @@ interface User {
   organization: string;
   zone?: string;
 }
-
 
 const NewUser = () => {
   const { users, setUsers } = useContext(UsersContext);
@@ -20,9 +19,9 @@ const NewUser = () => {
 
   const handleSubmit = (event: React.FormEvent) => {
     event.preventDefault();
-    const neuUser  = { username, password, organization, zone };
+    const neuUser = { username, password, organization, zone };
     setUsers([...users, neuUser]);
-
+    console.log(users);
     
   };
 
@@ -78,14 +77,21 @@ const NewUser = () => {
               }}
             />
           </div>
-         
         </form>
         <Link to={"/login/missiles"}>
           <button type="submit">go to shop</button>
         </Link>
+
+        <Link to={"/users"}>
+          <button type="submit"> add user and go back to users</button>
+        </Link>
+        
       </div>
+      
     </>
   );
+  
 };
+
 
 export default NewUser;

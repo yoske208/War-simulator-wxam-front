@@ -11,7 +11,7 @@ interface User {
     children : ReactNode
  }
 
- interface UserProps {
+ export interface UserProps {
     users: User[];
     setUsers: React.Dispatch<React.SetStateAction<User[]>>;
  }

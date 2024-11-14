@@ -13,18 +13,15 @@ import Login from "../Pages/Login";
 // import Edit2 from "../User/Edit2";
 
 const AppRouter = () => {
-  return (  
+  return (
     <>
       <Routes>
-      <Route path="/users" element={<DisplayUsers />} />
-      <Route path="/users/add" element={<NewUser />} />
-      <Route path="/login/missiles" element={<DisplayMissiles />} />
-      <Route path="/organization" element={<DisplayOrganizationMissiles />} />
-      <Route path="/home" element={<HomePage />} />
-      <Route path="/login" element={<Login />} />
-
-
-        
+        <Route path="/users" element={<DisplayUsers />} />
+        <Route path="/users/add" element={<NewUser />} />
+        <Route path="/login/missiles" element={<DisplayMissiles />} />
+        <Route path="/organization" element={<DisplayOrganizationMissiles />} />
+        <Route path="/home" element={<HomePage />} />
+        <Route path="/login" element={<Login />} />
       </Routes>
     </>
   );

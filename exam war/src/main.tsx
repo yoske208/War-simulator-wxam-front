@@ -13,9 +13,9 @@ createRoot(document.getElementById('root')!).render(
     <BrowserRouter>
     <UserProvaider>
     <MissilesProvaider>
-      <OrganizationProvaider>
+    <OrganizationProvaider>
       <App />
-      </OrganizationProvaider>
+    </OrganizationProvaider>
     </MissilesProvaider>
     </UserProvaider>
     </BrowserRouter>

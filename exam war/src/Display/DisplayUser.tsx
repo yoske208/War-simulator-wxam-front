@@ -18,22 +18,22 @@ const DisplayUsers = () => {
               {/* <NavLink to={"/missiles/"}><button>buy</button></NavLink> */}
             
 
-            {/* <button
+            <button
               onClick={() =>
                 setUsers(users.filter((prevuser) => prevuser._id !== user._id))
               }
             >
               Delete
-            </button> */}
+            </button>
             {/* <button onClick={() => addStart(user)}>Add to stars</button> */}
 
             {/* {flag && <EditUser editUser={updateUser} user={user} />} */}
           </div>
         ))}
       </div>
-      {/* <Link to={"/users/add"}>
+      <Link to={"/users/add"}>
         <button>ADD USER</button>
-      </Link> */}
+      </Link>
 
       {/* <Link to={"/users/login"}>
         <button>Login</button>
